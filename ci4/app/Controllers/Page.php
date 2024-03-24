@@ -1,27 +1,26 @@
 <?php namespace App\Controllers;
-
-class page extends BaseController 
+class Page extends BaseController
 {
-   public function about()
+    public function index()
     {
-    echo "about page";
+        $data = [
+            'title' => 'Selamat datang | Unipdu Press',
+            'tes' => ['satu', 'dua'. 'tiga']
+        ];
+        echo view ('layout/header',$data);
+        echo view ('pages/home');
+        echo view ('layout/footer');
+    }
+    
+    public function about()
+    {
+        $data = [
+            'title' => 'Tentang kami | Unipdu Press',
+            'tes' => ['satu', 'dua'. 'tiga']
+        ];
+        echo view ('layout/header',$data);
+        echo view ('pages/about');
+        echo view ('layout/footer');
     }
 
-    public function contact()
-    {
-    echo "contact page";
-    }
-
-    public function faqs()
-    {
-    echo "faqs page";
-    }
-
-    public function tos()
-    {
-        echo "Nama          : Fandi Ahmad";
-        echo "TTL           : Jombang, 26 Mei 2002";
-        echo "Alamat        : Dsn. Sumberbendo, Kec. Jogoroto, Kab. Jombang ";
-        echo "Jenis Kelamin : laki-laki";
-    }
 }
