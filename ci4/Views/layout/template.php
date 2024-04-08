@@ -21,7 +21,7 @@
                     <a class="nav-link" aria-curent="#" href="/books/index">Buku</a>
                     <a class="nav-link" aria-current="#" href="/pages/contact">Kontak</a>
                     
-                </div>
+                </div> 
             </div>
         </div>
     </nav>

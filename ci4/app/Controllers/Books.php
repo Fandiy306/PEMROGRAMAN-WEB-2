@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\BookModel;
+
 use App\Models\BooksModel;
 
 class Books extends BaseController
@@ -14,14 +14,22 @@ class Books extends BaseController
     }
     public function index()
     {
-        $buku = $this->bukuModel->findAll();
         $data = [
             'title' => 'Daftar Buku',
-            'buku' => $buku
+            'buku' => $this->bukuModel->getBuku()
         ];
-
         //$bukuModel = new \App\Models\BooksModel();
 
         return view('books/index', $data);
+    }
+    
+    public function detail($slug)
+    {
+        $data = [
+            'title' => 'Detail Buku',
+            'buku' => $this->bukuModel->getBuku($slug)
+        ];
+
+        return view('books/detail', $data);
     }
 }

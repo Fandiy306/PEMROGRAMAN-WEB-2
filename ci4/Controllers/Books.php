@@ -24,4 +24,4 @@ class Books extends BaseController
 
         return view('books/index', $data);
     }
-}
+} 

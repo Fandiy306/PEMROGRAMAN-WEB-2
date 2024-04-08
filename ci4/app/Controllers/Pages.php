@@ -30,12 +30,12 @@ class Pages extends BaseController
             'alamat' => [
                 [
                     'tipe' => 'Rumah', 
-                    'alamat' => 'Desa Peterongan no 28',
-                    'kota' => 'Jombang'
+                    'alamat' => 'Desa Lawak',
+                    'kota' => 'Lamongan'
                 ],
                 ['tipe' => 'Kantor',
-                'alamat' => 'Kompleks Ponpes Darul Ulum Peterongan',
-                'kota' => 'Jombang'
+                'alamat' => 'Dusun Klembak Desa Lawak',
+                'kota' => 'Lamongan'
                 ]
             ]
         ];
